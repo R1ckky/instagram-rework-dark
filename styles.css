@@ -1,0 +1,12 @@
+@font-face {
+  font-family: Billabong;
+  src: url(FontsFree-Net-Billabong.ttf) format("truetype");
+}
+
+h1 {
+  font-family: Billabong, cursive, san-serif;
+}
+
+img {
+  width: 100px;
+}
