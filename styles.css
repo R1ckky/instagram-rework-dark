@@ -3,6 +3,40 @@
   src: url(FontsFree-Net-Billabong.ttf) format("truetype");
 }
 
+body {
+  display: grid;
+  grid-template-columns: 1fr 6fr;
+  grid-template-areas:
+    "aside topnav"
+    "aside stories"
+    "aside feed"
+    "footer footer";
+}
+
+body > aside {
+  grid-area: aside;
+  background-color: purple;
+}
+
+body > section > nav.topnav {
+  grid-area: topnav;
+  background-color: brown;
+}
+
+body > main > div.stories {
+  grid-area: stories;
+  background-color: burlywood;
+}
+
+body > main > div.feed {
+  grid-area: feed;
+  background-color: blue;
+}
+
+body > footer {
+  grid-area: footer;
+}
+
 h1 {
   font-family: Billabong, cursive, san-serif;
 }
@@ -10,3 +44,9 @@ h1 {
 img {
   width: 100px;
 }
+
+/* 
+display: grid
+grid-template-columns/rows
+set viewport (vh vw) height and/or width
+*/
