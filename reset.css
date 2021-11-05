@@ -55,8 +55,7 @@ nav a,
 ol,
 p,
 section,
-span,
-ul {
+span {
   margin: 0;
   padding: 0;
   border: 0;
@@ -67,6 +66,7 @@ ul {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
   color: rgba(255, 255, 255, 0.8);
+  font-family: Avenir, Montserrat, sans-serif;
 }
 
 /* Set the default page element styles */
