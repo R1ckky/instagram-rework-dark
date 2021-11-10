@@ -5,7 +5,7 @@
 
 @font-face {
   font-family: Avenir;
-  src: url(AvenirLTStd-Roman.otf) format("otf");
+  src: url(AvenirLTStd-Roman.otf) format("opentype");
 }
 
 @font-face {
@@ -15,7 +15,7 @@
 
 body {
   display: grid;
-  grid-template-columns: 1fr 5fr;
+  grid-template-columns: 350px auto;
   grid-template-areas:
     "aside topnav"
     "aside stories"
@@ -33,6 +33,11 @@ body > aside {
 
 body > section > nav.topnav {
   grid-area: topnav;
+}
+
+nav.sidenav li {
+  clear: left;
+  padding-top: 10px;
 }
 
 nav.sidenav li:first-of-type {
@@ -83,22 +88,58 @@ body > aside > section h1#hero {
   font-weight: normal;
 }
 
-aside section img {
+aside > section > img {
   width: 100px;
   float: left;
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+aside > section div > img {
+  display: block;
+  clear: left;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 35px;
+  width: 40%;
+  border-radius: 50%;
 }
 
 aside section h1 {
   float: left;
+  margin-top: 20px;
+}
+
+aside section div h2,
+aside section div h3 {
+  text-align: center;
+}
+
+aside section div h2 {
+  padding-bottom: 10px;
+}
+
+aside section div h3 {
+  padding-bottom: 15px;
 }
 
 aside section div {
   clear: left;
 }
 
-section > nav.topnav > ul {
-  float: right;
+aside section ul li {
+  float: left;
+  text-align: center;
 }
+
+aside section ul li:nth-of-type(2) {
+  padding: 0px 60px;
+}
+
+section > nav.topnav > ul {
+  float: left;
+}
+
 /* 
 display: grid
 grid-template-columns/rows
