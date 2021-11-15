@@ -40,36 +40,72 @@ nav.sidenav li {
   padding-top: 10px;
 }
 
+nav.sidenav ul li {
+  margin-bottom: 20px;
+}
+
 nav.sidenav li:first-of-type {
-  list-style-image: url(images/ui/feed.svg);
+  background: url("images/ui/feed.svg") no-repeat left top;
+  background-size: 25px;
+  height: 25px;
+  padding-left: 45px;
+  padding-top: 3px;
 }
 
 nav.sidenav li:nth-of-type(2) {
-  list-style-image: url(images/ui/search.svg);
+  background: url("images/ui/search.svg") no-repeat left top;
+  background-size: 25px;
+  height: 25px;
+  padding-left: 45px;
+  padding-top: 3px;
 }
 
 nav.sidenav li:nth-of-type(3) {
-  list-style-image: url(images/ui/notifications.svg);
+  background: url("images/ui/notifications.svg") no-repeat left top;
+  background-size: 25px;
+  height: 25px;
+  padding-left: 45px;
+  padding-top: 3px;
 }
 
 nav.sidenav li:nth-of-type(4) {
-  list-style-image: url(images/ui/direct.svg);
+  background: url("images/ui/direct.svg") no-repeat left top;
+  background-size: 25px;
+  height: 25px;
+  padding-left: 45px;
+  padding-top: 3px;
 }
 
 nav.sidenav li:nth-of-type(5) {
-  list-style-image: url(images/ui/igtv.svg);
+  background: url("images/ui/igtv.svg") no-repeat left top;
+  background-size: 25px;
+  height: 25px;
+  padding-left: 45px;
+  padding-top: 3px;
 }
 
 nav.sidenav li:nth-of-type(6) {
-  list-style-image: url(images/ui/stats.svg);
+  background: url("images/ui/stats.svg") no-repeat left top;
+  background-size: 25px;
+  height: 25px;
+  padding-left: 45px;
+  padding-top: 3px;
 }
 
 nav.sidenav li:nth-of-type(7) {
-  list-style-image: url(images/ui/settings.svg);
+  background: url("images/ui/settings.svg") no-repeat left top;
+  background-size: 25px;
+  height: 25px;
+  padding-left: 45px;
+  padding-top: 3px;
 }
 
 nav.sidenav li:last-of-type {
-  list-style-image: url(images/ui/logout.svg);
+  background: url("images/ui/logout.svg") no-repeat left top;
+  background-size: 25px;
+  height: 25px;
+  padding-left: 45px;
+  padding-top: 3px;
 }
 
 body > section > div.stories {
@@ -136,12 +172,41 @@ aside section ul li:nth-of-type(2) {
   padding: 0px 60px;
 }
 
-section > nav.topnav > ul {
-  float: left;
+section > nav.topnav > a > img {
+  height: 40px;
+  padding-left: 25px;
 }
 
-/* 
-display: grid
-grid-template-columns/rows
-set viewport (vh vw) height and/or width
-*/
+.gradient-button {
+  margin: 10px 10px 10px 10px;
+  font-family: "Arial Black", Gadget, sans-serif;
+  font-size: 20px;
+  padding: 15px;
+  text-align: center;
+  text-transform: uppercase;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: #fff;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  width: 150px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  cursor: pointer;
+  display: inline-block;
+  border-radius: 25px;
+}
+.gradient-button:hover {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+  margin: 8px 10px 12px;
+}
+.gradient-button-1 {
+  background-image: linear-gradient(to right, #e2336b 0%, #fcac46 51%, #dd5e89 100%);
+}
+.gradient-button-1:hover {
+  background-position: right center;
+}
+
+.topnav {
+  float: right;
+}

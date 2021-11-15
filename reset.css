@@ -21,7 +21,8 @@ footer,
 header,
 main,
 nav,
-section {
+section,
+ul {
   display: block;
 }
 
