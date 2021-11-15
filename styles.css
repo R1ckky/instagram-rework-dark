@@ -16,6 +16,7 @@
 body {
   display: grid;
   grid-template-columns: 350px auto;
+  grid-template-rows: 150px auto auto;
   grid-template-areas:
     "aside topnav"
     "aside stories"
@@ -178,7 +179,7 @@ section > nav.topnav > a > img {
 }
 
 .gradient-button {
-  margin: 10px 10px 10px 10px;
+  margin: 30px 10px 10px 10px;
   font-family: "Arial Black", Gadget, sans-serif;
   font-size: 20px;
   padding: 15px;
@@ -193,12 +194,13 @@ section > nav.topnav > a > img {
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
   transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
   cursor: pointer;
-  display: inline-block;
+  display: block;
   border-radius: 25px;
+  float: right;
 }
 .gradient-button:hover {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-  margin: 8px 10px 12px;
+  margin: 30px 10px 12px;
 }
 .gradient-button-1 {
   background-image: linear-gradient(to right, #e2336b 0%, #fcac46 51%, #dd5e89 100%);
@@ -207,6 +209,46 @@ section > nav.topnav > a > img {
   background-position: right center;
 }
 
-.topnav {
-  float: right;
+div.stories > h1,
+div.feed > h1 {
+  font-size: 30px;
+  font-weight: normal;
 }
+
+/*
+.wrapper {
+  background: url("bg.png") no-repeat center;
+  width: 100%;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
+  float: left;
+}
+
+.search_box {
+  width: 50%;
+  position: relative;
+}
+
+.search_box input[type="text"] {
+  width: 100%;
+  padding: 20px;
+  padding-right: 60px;
+  box-sizing: border-box;
+  background: rgba(0, 0, 0, 0.3);
+  border: 2px solid #fff;
+  border-radius: 10px;
+  font-size: 18px;
+  color: #fff;
+  outline: none;
+}
+
+.fa-search {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  right: 25px;
+  color: #fff;
+  font-size: 25px;
+}
+*/
