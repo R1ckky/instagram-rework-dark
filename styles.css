@@ -16,7 +16,8 @@
 body {
   display: grid;
   grid-template-columns: 350px auto;
-  grid-template-rows: 150px auto auto;
+  column-gap: 100px;
+  grid-template-rows: 150px 300px auto;
   grid-template-areas:
     "aside topnav"
     "aside stories"
@@ -213,7 +214,29 @@ div.stories > h1,
 div.feed > h1 {
   font-size: 30px;
   font-weight: normal;
+  margin-bottom: 40px;
 }
+
+div.stories > img {
+  display: block;
+  float: left;
+  width: 140px;
+  margin-right: 40px;
+  border-radius: 50%;
+}
+
+.feed > img {
+  width: 30%;
+  border-radius: 5%;
+}
+
+/*
+.feed {
+  display: flex;
+  flex-wrap: wrap;
+  align-content: stretch;
+}
+*/
 
 /*
 .wrapper {
