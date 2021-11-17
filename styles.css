@@ -180,7 +180,7 @@ section > nav.topnav > a > img {
 }
 
 .gradient-button {
-  margin: 30px 10px 10px 10px;
+  margin: 30px 45px 10px 10px;
   font-family: "Arial Black", Gadget, sans-serif;
   font-size: 20px;
   padding: 15px;
@@ -201,7 +201,7 @@ section > nav.topnav > a > img {
 }
 .gradient-button:hover {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-  margin: 30px 10px 12px;
+  margin: 30px 45px 12px;
 }
 .gradient-button-1 {
   background-image: linear-gradient(to right, #e2336b 0%, #fcac46 51%, #dd5e89 100%);
@@ -228,6 +228,9 @@ div.stories > img {
 .feed > img {
   width: 30%;
   border-radius: 5%;
+  margin-right: 40px;
+  vertical-align: top;
+  margin-bottom: 100px;
 }
 
 /*
