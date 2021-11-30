@@ -47,8 +47,6 @@ body {
     "aside topnav"
     "aside stories"
     "aside feed";
-  min-width: 640px;
-  width: 100%;
   background-color: #3c3f51;
 }
 
@@ -207,7 +205,7 @@ nav.sidenav li:last-of-type {
 
 /* Top Nav Styles */
 .gradient-button {
-  margin: 30px 45px 10px 10px;
+  margin: 30px 35px 10px 10px;
   font-family: "Arial Black", Gadget, sans-serif;
   font-size: 20px;
   padding: 15px;
@@ -228,7 +226,7 @@ nav.sidenav li:last-of-type {
 }
 .gradient-button:hover {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
-  margin: 30px 45px 12px;
+  margin: 30px 35px 12px;
 }
 .gradient-button-1 {
   background-image: linear-gradient(to right, #e2336b 0%, #fcac46 51%, #dd5e89 100%);
@@ -296,24 +294,56 @@ li.flexbox-item2 > img {
   }
 }
 
-@media (max-aspect-ratio: 1/1) and (max-width: 480px) {
-  ul.flexbox-container2 {
-    flex-direction: row;
+@media screen and (max-device-width: 1024px) {
+  body {
+    grid-template-columns: 1fr 2fr;
   }
 
-  li.flexbox-item2 {
-    height: auto;
-    width: 100%;
+  .gradient-button {
+    margin-left: auto;
+    margin-right: auto;
+    float: none;
   }
-  li.flexbox-item2 > img {
-    width: 100%;
-    max-height: 75vh;
-    min-width: 0;
+  .gradient-button:hover {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  aside > section ul {
+    display: none;
   }
 }
 
-@media screen and (max-width: 884px) {
+@media screen and (max-device-width: 865px) {
   body {
-    grid-template-columns: auto 534px;
+    grid-template-columns: 100px auto;
+    column-gap: 0px;
   }
+
+  div.stories,
+  div.feed {
+    margin-left: 1em;
+  }
+
+  #hero,
+  aside > section div,
+  nav.sidenav a {
+    display: none;
+  }
+
+  nav.sidenav li {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  aside > section > img {
+    display: block;
+    float: none;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (max-device-width: 665px) {
 }
